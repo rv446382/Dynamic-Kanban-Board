@@ -1,0 +1,68 @@
+/* App.css */
+.app {
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.task-form {
+  margin-bottom: 30px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.task-form input,
+.task-form textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.task-form input:focus,
+.task-form textarea:focus {
+  outline: none;
+  border-color: #66afe9;
+  box-shadow: 0 0 5px rgba(102, 175, 233, 0.5);
+}
+
+
+.task-form button {
+  padding: 8px 16px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.column {
+  background: #f4f4f4;
+  padding: 15px;
+  border-radius: 5px;
+  min-height: 400px;
+}
+
+.task-card {
+  background: white;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: move;
+}
+
+.task-card h4 {
+  margin: 0 0 5px 0;
+}
+
+.task-card p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
